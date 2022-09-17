@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="section">
+    <h4>TODO 1337</h4>
+    <label class="form-label">Задача</label>
+    <input type="text" class="form-control textarea_date">
+    <label class="form-label">Выполнить до</label>
+    <input type="date" class="form-control textarea_date">
+    <button class="btn btn-primary" onclick="onClick()">Добавить</button>
+</div>
+<div class="task">
+    <div class="in_process">
+        <h5>В процессе</h5>
+        <div class="block_process">
+            <div class="block">
+                <h3 class="text_process"></h3>
+                <p class="date_process"></p>
+                <div class="btn-group">
+                    <button class="btn btn-outline-danger delete">Удалить</button>
+                    <button class="btn btn-outline-success success">Готово</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ready">
+        <h5>В процессе</h5>
+        <div class="block_ready">
+            <div class="block">
+                <h3 class="text_ready"></h3>
+                <p class="date_ready"></p>
+                <div class="btn-group">
+                    <button class="btn btn-outline-danger delete">Удалить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
